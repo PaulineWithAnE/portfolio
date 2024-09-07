@@ -1,0 +1,1047 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    transition: 1s;
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+.preview {
+    display: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow-x: hidden;
+}
+
+.all {
+    display: none;
+    overflow-x: hidden;
+}
+
+.meHeader {
+    filter: drop-shadow(11px 5px #fc6d6d);
+    color: white;
+    font-size: 70px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    font-weight: 100;
+    margin-bottom: 50px;
+}
+
+.meHeaderSpan {
+    color: darkgray;
+    font-size: 70px;
+    filter: drop-shadow(20px 20px 20px darkgray);
+    margin: 0px;
+    font-weight: 100;
+    margin-bottom: 35px;
+    margin-left: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu {
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu:hover {
+    background-color:rgba(255, 255, 255, 0.55);
+    transition: 1s;
+}
+
+.info {
+    margin-right: 50px;
+}
+
+#name {
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.menuItem {
+    margin-right: 20px;
+    font-size: 17px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 93vh;
+    background-color: white;
+}
+
+h1 {
+    color: darkgray;
+    font-size: 140px;
+    filter: drop-shadow(20px 20px 20px darkgray);
+    margin: 0px;
+    margin-left: 60px;
+    font-weight: 100;
+}
+
+span {
+    filter: drop-shadow(10px 6px #fc6d6d);
+    color: white;
+    font-size: 160px;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    margin-left: 250px;
+    font-weight: 110;
+}
+
+#time {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 66vh;
+    width: 165vh;
+    text-transform: uppercase;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.aboutText {
+    width: 510px;
+    margin-left: 50px;
+    margin-top: 140px;
+}
+
+.me {
+    rotate: -10deg;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    margin-top: 0px;
+}
+
+.mePic {
+    filter: drop-shadow(3px 3px 7px #757574);
+}
+
+.aboutP {
+    margin: 3px;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.aboutHr {
+    width: 0px;
+    border: 0.1px solid darkgray;
+    margin-top: 38px;
+    margin-left: 0px;
+   
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    border: 1px solid darkgray;
+    rotate: -10deg;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 235px;
+    z-index: 1;
+}
+
+#about {
+    padding-top: 80px;
+}
+
+.first {
+    margin-bottom: 20px;
+}
+
+.last {
+    margin-top: 20px;
+}
+
+
+.headerMenu {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-left: 100px;
+}
+
+h2 {
+    color: darkgray;
+    font-size: 110px;
+    filter: drop-shadow(20px 20px 20px darkgray);
+    font-weight: 110;
+    margin-top: 65px;
+    margin-bottom: 50px;
+    transition: 1s;
+    margin-left: 5px;
+}
+
+.spanMenu {
+    filter: drop-shadow(10px 10px #fc6d6d);
+    color: white;
+    font-size: 140px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 110;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    transition: 1s;
+}
+
+.spanMenuChanged {
+    filter: drop-shadow(10px 10px white);
+    color: #bfc7af;
+    transition: 1s;
+}
+
+.h2Changed {
+    color: #757574;
+}
+
+
+.spanMenuCoffee {
+    filter: drop-shadow(10px 10px #d49985);
+    color: #fcf7eb;
+    transition: 1s;
+}
+
+.spanMenuAda {
+    filter: drop-shadow(10px 10px #e87676);
+    color: #EADBDB;
+    transition: 1s;
+}
+
+.spanMenuWeather {
+    filter: drop-shadow(10px 10px #4A295D);
+    color: #E6E6FA;
+    transition: 1s;
+}
+
+.spanMenuSanta {
+    filter: drop-shadow(10px 10px white);
+    color: #8daeb1;
+    transition: 1s;
+}
+
+.spanMenuBill {
+    filter: drop-shadow(10px 10px white);
+    color: #EFDECD;
+    transition: 1s;
+}
+
+.spanMenuQuiz {
+    filter: drop-shadow(10px 10px #4A295D);
+    color: #cfe2ff;
+    transition: 1s;
+}
+
+
+
+.spanMenuMovie {
+    filter: drop-shadow(10px 10px white);
+    color: #FADADD;
+    transition: 1s;
+}
+
+
+
+.picg {
+    opacity: 0.1;
+}
+
+.vert, .coffee, .weather, .adaHanina, .quiz, .search, .santa, .bill {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    flex-direction: column;
+    z-index: 3;
+}
+
+.pic {
+    padding: 30px;
+    border: 1px solid lightgray;
+    margin-top: 0px;
+} 
+
+.vertPic {
+    filter: drop-shadow(5px 5px 5px #667649);
+} 
+
+.billPic {
+    filter: drop-shadow(5px 5px 5px #2b4a4b);
+}
+
+.coffeePic, .adaPic {
+    filter: drop-shadow(5px 5px 5px #847e79);
+}
+
+.moviePic, .quizPic {
+    filter: drop-shadow(5px 5px 5px #847e79);
+}
+
+.pictures {
+    display: flex;
+}
+
+.weatherPic {
+    filter: drop-shadow(5px 5px 5px #a5aae5);
+}
+
+.santaPic {
+    filter: drop-shadow(5px 5px 5px #8daeb1);
+}
+
+.headerGif {
+    background-color: white;
+    width: max-content;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.headerGifs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.blog .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:1;
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translate(-50%, 0);
+    transition: 0.5s;
+    width:89.9%;
+    height:10.5%;
+    font-size:20px;
+    font-weight: 300;
+    background-color:rgba(255, 255, 255, 0.55);
+    color: black;
+    margin-bottom: 35px;
+}  
+
+.blogWeather .text{
+    top:80.5%;
+    width:85.7%;
+} 
+
+.blogAda .text{
+    top:80.5%;
+    width:85%;
+} 
+
+.blogBill .text{
+    top:80%;
+    width:86.5%;
+} 
+
+.blogSanta .text{
+    width:88%;
+} 
+
+.blogMovie .text {
+    top:81.7%;
+    width:85.1%;
+}
+
+.blogQuiz .text {
+    top: 82.5%;
+    width:85.1%;
+}
+
+.blog:hover .text{  
+    opacity: 0;
+}
+
+.blog {
+    position: relative;
+    margin: 40px;
+}  
+
+.blogVert {
+    margin-top: 70px;
+}
+
+.blogBill {
+    margin-top: 70px;
+    height: 315px;
+}
+
+.blogWeather {
+    height: 339px;
+}
+
+.blogMovie {
+    margin-left: 150px;
+    margin-top: 50px;
+    height: 399px;
+}
+
+.blogQuiz {
+    margin-top: 90px;
+    height: 410px;
+  
+}
+
+.h2Weather {
+    color: white;
+}
+
+.borderColor {
+    border: 1px solid white;
+    filter: drop-shadow(2px 2px 2px darkgray);
+}
+
+.blogAda {
+    margin-top: 80px;
+}
+
+.spanFooter {
+    filter: drop-shadow(14px 11px #fc6d6d);
+    color: white;
+    font-size: 90px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 150;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.h3Footer {
+    color: darkgray;
+    font-size: 70px;
+    filter: drop-shadow(20px 20px 20px darkgray);
+    font-weight: 150;
+    margin-top: 10px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-bottom: 80px;
+}
+
+.footerHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    padding-bottom: 20px;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+
+}
+
+.footerButton {
+    margin-right: 50px;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    font-size: 25px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.linkedin {
+    font-size: 25px;
+    font-weight: 200;
+    color: #0177b5;
+    padding: 15px;
+}
+
+.footerButton:hover {
+    color: darkgray;
+}
+
+.icon {
+    padding-right: 10px;
+}
+
+.icons {
+    margin-left: 50px;
+    margin-top: 5px;
+    display: flex;
+}
+
+.second {
+    margin-right: 5px;
+}
+
+.hrFooter {
+    height: 80px;
+    border: 0.1px solid black;
+}
+
+.creator {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    background-color: white;
+}
+
+.previewVert, .previewCoffee, .previewWeather, .previewAda, .previewSanta, .previewBill, .previewQuiz, .previewMovie {
+    display: none;
+    width: min-content;
+}
+
+@media all and (max-width: 500px) {
+
+    .meHeader {
+        font-size: 35px;
+    }
+    
+    .meHeaderSpan {
+        font-size: 35px;
+        margin-bottom: 40px;
+        margin-left: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    
+    span {
+        font-size: 55px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name {
+        margin-left: 10px;
+    }
+
+    #time {
+        display: none;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .aboutText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        margin-left: 5px;
+        margin-top: 0px;
+    }
+    
+    .mePic {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 50px;
+        width: 200px;        
+    }
+    
+    .aboutP {
+        margin: 3px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .aboutHr {
+        width: 0px;
+        border: 0.1px solid darkgray;
+        margin-top: 38px;
+        margin-left: 5px;
+    }
+    
+    .square {
+        width: 200px;
+        height: 200px;
+        margin-top: 30px;
+        margin-left: 0px;
+    }
+
+    .squareDiv {
+        display: flex;
+        justify-content: center;
+    }
+
+    h2 {
+        font-size: 50px;
+        margin-top: 35px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+    
+    .spanMenu {
+        font-size: 65px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+    .menu {
+        align-items: flex-start;
+    }
+
+    .headerMenu {
+        padding: 30px;
+        margin-left: 0px;
+        padding-top: 90px;
+    }
+
+    .menuItem {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #828282;
+    }
+
+    .menu:hover {
+        background-color: transparent;
+    }
+
+    .spanFooter {
+        filter: drop-shadow(14px 11px #fc6d6d);
+        color: white;
+        font-size: 55px;
+        font-weight: 110;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    
+    .h3Footer {
+        color: darkgray;
+        font-size: 40px;
+        filter: drop-shadow(20px 20px 20px darkgray);
+        font-weight: 110;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding-bottom: 80px;
+    }
+    
+    .footerHeader {
+        display: flex;
+        width: 85%;
+        padding: 10px;
+        padding-bottom: 20px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .footerButton {
+        margin-right: 20px;
+        font-size: 22px;
+    }
+
+    .icons {
+        margin-left: 20px;
+    }
+
+    .creator {
+        padding-right: 10px;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .pictures {
+        flex-direction: column;
+    }
+
+    .blogWeather .text{
+        top:76.8%;
+        width:80.3%;
+    } 
+    
+    .blogAda .text{
+        top:77.7%;
+        width:80.1%;
+    } 
+    
+    .blogBill .text{
+        top:74.5%;
+        width:80.5%;
+    } 
+    
+    .blogSanta .text{
+        width:80.5%;
+    } 
+    
+    .blogMovie .text {
+        top:78.2%;
+        width:80.6%;
+    }
+    
+    .blogQuiz .text {
+        top: 78.5%;
+        width:80.1%;
+    }
+
+    .blogCoffee .text {
+        width:80.1%;
+    }
+    
+    .blog:hover .text{  
+        opacity: 0;
+    }
+    
+    .blogVert {
+        margin-top: 70px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogBill {
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogWeather {
+        height: 250px;
+        margin-bottom: 0px;
+    }
+    
+    .blogMovie {
+        margin-left: 40px;
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogQuiz {
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogAda {
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .blogCoffee {
+        margin-bottom: 0px;
+    }
+
+    .blogSanta {
+        margin-bottom: 0px;
+    }
+
+    .previewVert, .previewCoffee, .previewWeather, .previewAda, .previewSanta, .previewBill, .previewQuiz, .previewMovie {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .previewWeather, .previewSanta, .previewBill, .previewQuiz, .previewMovie {
+        margin-bottom: 60px;
+    }
+}
+
+@media all and (min-width: 500px) and (max-width:800px) {
+
+    .meHeader {
+        font-size: 60px;
+    }
+    
+    .meHeaderSpan {
+        font-size: 60px;
+    }
+
+    h1 {
+        font-size: 60px;
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+    
+    span {
+        font-size: 70px;
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .info {
+        margin-right: 30px;
+        display: flex;
+    }
+
+    #name {
+        margin-left: 10px;
+    }
+
+    #time {
+        height: 80vh;
+        width: 70vh;
+    }
+
+    .menu {
+        align-items: center;
+    }
+
+    .about {
+        display: flex;
+        margin-top: 0px;
+    }
+    
+    .aboutText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+        margin-left: 30px;
+        margin-top: 0px;
+    }
+    
+    .mePic {
+        margin-right: 0px;
+        margin-bottom: 0px;
+        margin-top: 67px;
+        width: 200px;        
+    }
+    
+    .aboutP {
+        margin: 3px;
+        font-size: 20px;
+        font-weight: 100;
+    }
+    
+    .aboutHr {
+        width: 10px;
+        border: 0.1px solid darkgray;
+        margin-top: 38px;
+        margin-left: 5px;
+    }
+    
+    .square {
+        width: 200px;
+        height: 200px;
+        margin-top: 77px;
+        margin-left: 75px;
+    }
+   
+    h2 {
+        font-size: 80px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        margin-left: 5px;
+    }
+    
+    .spanMenu {
+        font-size: 95px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-right: 5px;
+    }
+
+    .menu {
+        align-items: flex-start;
+    }
+
+    .headerMenu {
+        padding: 30px;
+        margin-left: 0px;
+        padding-top: 90px;
+    }
+
+    .menuItem {
+        margin-left: 0px;
+        margin-bottom: 10px;
+        font-size: 20px;
+        color: #828282;
+    }
+
+    .menu:hover {
+        background-color: transparent;
+    }
+
+    .spanFooter {
+        filter: drop-shadow(14px 11px #fc6d6d);
+        color: white;
+        font-size: 55px;
+        font-weight: 110;
+        margin-bottom: 10px;
+        margin-top: 0px;
+    }
+    
+    .h3Footer {
+        color: darkgray;
+        font-size: 40px;
+        filter: drop-shadow(20px 20px 20px darkgray);
+        font-weight: 110;
+        margin-top: 10px;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding-bottom: 80px;
+    }
+    
+    .footerHeader {
+        display: flex;
+        width: 85%;
+        padding: 10px;
+        padding-bottom: 30px;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    .footerButton {
+        margin-right: 20px;
+        font-size: 22px;
+    }
+
+    .icons {
+        margin-left: 20px;
+    }
+
+    .creator {
+        padding-right: 10px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .previewVert, .previewCoffee, .previewWeather, .previewAda, .previewSanta, .previewBill, .previewQuiz, .previewMovie {
+        display: block;
+        margin-left: 40px;
+    }
+
+    .previewWeather, .previewSanta, .previewBill, .previewQuiz, .previewMovie {
+        margin-bottom: 40px;
+    }
+
+    .blogWeather .text{
+        top:73.3%;
+        width:76.3%;
+    } 
+    
+    .blogAda .text{
+        top:75.5%;
+        width:76.3%;
+    } 
+    
+    .blogBill .text{
+        top:71.5%;
+        width:76.3%;
+    } 
+    
+    .blogSanta .text{
+        width:76.5%;
+    } 
+    
+    .blogMovie .text {
+        top:76%;
+        width:76.6%;
+    }
+    
+    .blogQuiz .text {
+        top: 76.5%;
+        width:77%;
+    }
+
+    .blogCoffee .text {
+        width:76.8%;
+    }
+    
+    .blog:hover .text{  
+        opacity: 0;
+    }
+    
+    .blog .text {
+        font-size: 17px;
+    }
+
+    .blog:hover .text{  
+        opacity: 0;
+    }
+    
+    .blogVert {
+        margin-top: 70px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogBill {
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogWeather {
+        height: auto;
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    
+    .blogMovie {
+        margin-left: 40px;
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogQuiz {
+        margin-top: 30px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+    
+    .blogAda {
+        margin-top: 0px;
+        height: auto;
+        margin-bottom: 0px;
+    }
+
+    .blogCoffee {
+        margin-bottom: 0px;
+    }
+
+    .blogSanta {
+        margin-bottom: 0px;
+    }
+}
